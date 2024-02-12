@@ -1,0 +1,18 @@
+import unittest
+from models.base_model import BaseModel
+
+class TestBaseModel(unittest.TestCase):
+
+    def test_init(self):
+        base_model = BaseModel()
+        self.assertIsInstance(base_model, BaseModel)
+        # Add more test cases as needed
+
+    def test_to_dict(self):
+        base_model = BaseModel()
+        base_model_dict = base_model.to_dict()
+        self.assertIsInstance(base_model_dict, dict)
+        # Add more test cases as needed
+
+if __name__ == '__main__':
+    unittest.main()
